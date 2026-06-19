@@ -27,7 +27,8 @@ Build Automation     Maven / npm                           Dependency Isolation 
 │   │   ├── repositories/     # Spring Data JPA PostgreSQL Adapters
 │   │   └── security/         # JWT Verification Filters & CORS
 │   └── pom.xml               # Maven Dependency Configuration
-└── frontend/                 # Next.js / React Client App
+
+--- frontend/                 # Next.js / React Client App
     ├── src/
     │   ├── app/              # Folder-Based Routing Architectures
     │   ├── components/       # Reusable Context Panels (Toast, PayModal)
