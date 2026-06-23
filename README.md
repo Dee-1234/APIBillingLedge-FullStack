@@ -19,7 +19,7 @@ Security Layer       Spring Security / JWT                 Stateless Authorizati
 Data Persistence     PostgreSQL                            Relational Logs, Relational User Mappings
 ORM / Drivers        Spring Data JPA / Hibernate           Schema Generation, Native SQL Mapping
 Build Automation     Maven / npm                           Dependency Isolation and Artifact Assembly
-# Repository StructurePlaintextapibillingledger/
+# Structure Plaintext apibillingledger/
     ├── backend/                  # Java Spring Boot Services
     │   ├── src/main/java/com/ledger/
     │   │   ├── controllers/      # REST API Route Definitions
