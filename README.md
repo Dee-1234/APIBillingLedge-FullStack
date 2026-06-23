@@ -88,3 +88,6 @@ Server routes parse incoming HTTP request streams via filters to pull context cl
 If a database transaction calculation detects an unpaid balance over the allowed billing limit, data returns over the REST network pre-masked (••••••••).
 # Cross-Origin Configuration (CORS):
 Explicitly handles and sanitizes inbound resource calls coming between port 3000 and port 8080.
+
+# Screen Shots
+https://github.com/Dee-1234/APIBillingLedge-FullStack/tree/main/Screen%20Shots
