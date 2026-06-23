@@ -47,15 +47,15 @@ Optional<ApiKey> findActiveKeyByUser(@Param("username") String username);
 # API Contract Specifications
 All API routes are version-controlled and expect/return standard JSON application payloads. Protected endpoints require an Authorization: Bearer <JWT_TOKEN> header.
 # Core Endpoint Matrix
-HTTP Verb        API Context Route          Data Access Constraints              Intended Operation
-POST            /api/v1/auth/register            Public                    Instantiates a unique database developer identity.
-POST            /api/v1/auth/login               Public                    Validates credentials and yields a signed token.
-GET             /api/v1/keys/me              Authenticated (Owner Only)    Retrieves active profile key; returns masked data if locked.
-POST            /api/v1/keys/generate        Authenticated (Owner Only)    Drops older keys and updates active key rows.
-POST            /api/v1/usage/track          Authenticated (Owner Only)    Increments key copy metric counts and runs threshold                                                                                      assertions.
-GET             /api/v1/usage/logs           Authenticated (Owner Only)    Pipes a history array to feed UI analytics components.
-POST            /api/v1/billing/pay          Authenticated (Owner Only)    Triggers account credit corrections, resets count, appends                                                                                transaction.
-GET            /api/v1/billing/payments      Authenticated (Owner Only)    Extracts historically cleared payment objects.
+    HTTP Verb        API Context Route          Data Access Constraints              Intended Operation
+1. POST            /api/v1/auth/register            Public                    Instantiates a unique database developer identity.
+2. POST            /api/v1/auth/login               Public                    Validates credentials and yields a signed token.
+3. GET             /api/v1/keys/me              Authenticated (Owner Only)    Retrieves active profile key; returns masked data if locked.
+4. POST            /api/v1/keys/generate        Authenticated (Owner Only)    Drops older keys and updates active key rows.
+5. POST            /api/v1/usage/track          Authenticated (Owner Only)    Increments key copy metric counts and runs threshold                                                                                                            assertions.
+6. GET             /api/v1/usage/logs           Authenticated (Owner Only)    Pipes a history array to feed UI analytics components.
+7. POST            /api/v1/billing/pay          Authenticated (Owner Only)    Triggers account credit corrections, resets count, appends                                                                                                      transaction.
+8. GET            /api/v1/billing/payments      Authenticated (Owner Only)    Extracts historically cleared payment objects.
 # Development Environment Configuration
 # Prerequisites
 Java Development Kit (JDK 17 or higher)
